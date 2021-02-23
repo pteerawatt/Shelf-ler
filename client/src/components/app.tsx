@@ -1,15 +1,10 @@
-import React from "react";
+import React from 'react';
+import Header from './Header'
 
-const App = () => {
-  // let fakefunct = (input: string) => {
-  //   return input
-  // }
-  
-  // console.log(fakefunct(1))
-  
+const App: React.FC = () => {
   return (
     <div>
-      Hello from app
+      <Header />
     </div>
   )
 }
