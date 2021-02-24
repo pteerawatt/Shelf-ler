@@ -104,3 +104,6 @@ typings/
 
 # webpack bundle
 bundle.js
+
+# test medias
+toolbarimg.png
