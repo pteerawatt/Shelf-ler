@@ -2,7 +2,7 @@ import React from 'react';
 
 const Toolbar: React.FC = () => {
   return (
-    <div>
+    <div className="toolbar">
       Toolbar
     </div>
   )

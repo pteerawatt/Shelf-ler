@@ -5,7 +5,7 @@ import Display from './Display';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="app-container">
       <header>
         <a href="/">Shelf-ly</a>
       </header>

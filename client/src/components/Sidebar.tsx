@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar: React.FC = () => {
   return (
-    <div>
+    <div className="sidebar">
       <ul>
         <div>
           sidebar
