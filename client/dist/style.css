@@ -6,6 +6,10 @@ html {
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* Align footer at the bottom */
 body, #root {
   height: 100vh; 
@@ -58,7 +62,7 @@ footer {
 }
 
 .toolbar-display-container {
-  flex: 4 auto;
+  flex: 10 auto;
   display: grid;
   grid-template-areas: "toolbar"
                        "display";
@@ -69,11 +73,18 @@ footer {
 
 /* Sidebar */
 .sidebar {
-  width: 20rem;
+  flex: 1 20rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border: solid;
   border-color: green;
+}
+
+.sidebar-img img {
+  max-width: 10rem;
+  min-width: 5rem;
 }
 
 
