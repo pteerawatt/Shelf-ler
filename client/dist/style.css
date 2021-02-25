@@ -57,7 +57,6 @@ footer {
 
 .main-container {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -83,7 +82,7 @@ footer {
 }
 
 .sidebar-img img {
-  max-width: 10rem;
+  max-width: 5rem;
   min-width: 5rem;
 }
 
@@ -92,8 +91,15 @@ footer {
 /* Toolbar */
 .toolbar {
   grid-area: toolbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   border: solid;
   border-color: indianred;
+}
+
+.toolbar button {
+  flex: 1;
 }
 
 
@@ -102,6 +108,23 @@ footer {
 /* Display */
 .display {
   grid-area: display;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   border: solid;
   border-color: indigo;
+}
+
+.display .display-item {
+  flex: 1 1 20rem;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.item-entry img {
+  max-width: 20rem;
+  max-height: 20rem;
 }
