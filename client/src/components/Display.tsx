@@ -7,6 +7,51 @@ const Display: React.FC = () => {
       <div className="display-item">
         <ItemEntry />
       </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
+      <div className="display-item">
+        <ItemEntry />
+      </div>
     </div>
   )
 }
