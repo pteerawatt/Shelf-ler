@@ -19,7 +19,9 @@ const App: React.FC = () => {
         </div>
       </main>
       <footer>
-        All rights is reserved.
+        <div>
+          All rights is reserved.
+        </div>
       </footer>
     </div>
   )

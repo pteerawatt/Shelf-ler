@@ -26,12 +26,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid;
-  border-color: red;
 }
 
 header a {
   text-decoration: none;
+  letter-spacing: 1rem;
+  font-size: 5rem;
+  color: lightgray;
 }
 main {
   grid-area: main;
@@ -39,11 +40,13 @@ main {
 
 footer {
   grid-area: footer;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  border: solid;
+  color: lightgray;
 }
+
 /* General Display */
 .app-container {
   display: grid;
@@ -53,12 +56,16 @@ footer {
   grid-template-rows: 10rem 1fr 10rem;
   grid-template-columns: 1fr;
   height: 100%;
+  background-image: url("https://shelf-ler.s3-us-west-1.amazonaws.com/default-bg03.jpg");
+  background-size: cover;
+  overflow: hidden;
 }
 
 .main-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 20rem auto;
+  height: 100%;
+  max-height: 75vh;
 }
 
 .toolbar-display-container {
@@ -68,7 +75,8 @@ footer {
                        "display";
   grid-template-rows: 7rem 1fr;
   grid-template-columns: 1fr;
-  height: 100%;
+  height: 100%; 
+  max-height: 75vh;
 }
 
 /* Sidebar */
@@ -76,14 +84,24 @@ footer {
   flex: 1 20rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border: solid;
-  border-color: green;
+  border-radius: 3rem;
+  margin: 1rem;
+  border-color:lightgray;
+  height: 100%;
+}
+
+.sidebar-item {
+  border: solid;
+  border-color: whitesmoke;
+  border-radius: 10rem;
 }
 
 .sidebar-img img {
-  max-width: 10rem;
+  border-radius: 5rem;
+  max-width: 5rem;
   min-width: 5rem;
 }
 
@@ -92,8 +110,21 @@ footer {
 /* Toolbar */
 .toolbar {
   grid-area: toolbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   border: solid;
-  border-color: indianred;
+  border-radius: 3rem;
+  margin: 1rem;
+  border-color: lightgray;
+}
+
+.toolbar button {
+  flex: 1;
+  border-radius: 3rem;
+  height: 3rem;
+  width: 15rem;
 }
 
 
@@ -102,6 +133,29 @@ footer {
 /* Display */
 .display {
   grid-area: display;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 5rem;
   border: solid;
-  border-color: indigo;
+  border-radius: 3rem;
+  margin: 1rem;
+  border-color: lightgray;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.display .display-item {
+  flex: 1 1 20rem;
+  height: 20rem;
+  margin: 3rem;;
+}
+
+.item-entry img {
+  border-radius: 5rem;
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }

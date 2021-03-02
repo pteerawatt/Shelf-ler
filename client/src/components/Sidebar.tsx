@@ -5,20 +5,9 @@ import SidebarImage from './SidebarItems';
 const Sidebar: React.FC = () => {
   return (
     <div className="sidebar">
-      <ul>
-        <li>
-          <SidebarItem />
-        </li>
-        <li>
-          <SidebarItem />
-        </li>
-        <li>
-          <SidebarItem />
-        </li>
-        <li>
-          <SidebarItem />
-        </li>
-      </ul>
+      <div className="sidebar-item">
+        <SidebarItem />
+      </div>
     </div>
   )
 }
